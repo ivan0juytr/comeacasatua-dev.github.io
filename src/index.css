@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Blue Palette */
+    --background: 210 40% 98%;
+    --foreground: 210 50% 10%;
+
+    --card: 210 35% 96%;
+    --card-foreground: 210 50% 10%;
+
+    --popover: 210 40% 98%;
+    --popover-foreground: 210 50% 10%;
+
+    /* Blue Primary */
+    --primary: 210 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light Blue Secondary */
+    --secondary: 210 30% 90%;
+    --secondary-foreground: 210 50% 15%;
+
+    /* Muted Light Blue */
+    --muted: 210 25% 92%;
+    --muted-foreground: 210 20% 45%;
+
+    /* Deep Blue Accent */
+    --accent: 220 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 25% 85%;
+    --input: 210 25% 88%;
+    --ring: 210 70% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Colors */
+    --terracotta: 210 70% 50%;
+    --terracotta-light: 210 65% 65%;
+    --terracotta-dark: 210 75% 38%;
+    --cream: 210 40% 98%;
+    --sand: 210 30% 90%;
+    --warm-brown: 210 50% 10%;
+    --mediterranean-blue: 220 65% 45%;
+    --mediterranean-blue-light: 220 60% 60%;
+    --mediterranean-blue-dark: 220 70% 35%;
+    --olive: 200 25% 45%;
+    --gold: 210 75% 55%;
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(210 25% 92%) 100%);
+    --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+    --gradient-terracotta: linear-gradient(135deg, hsl(210 70% 50%) 0%, hsl(210 75% 40%) 100%);
+    --gradient-mediterranean: linear-gradient(135deg, hsl(220 65% 45%) 0%, hsl(220 70% 35%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px rgba(60, 90, 139, 0.08);
+    --shadow-medium: 0 8px 30px -4px rgba(60, 90, 139, 0.12);
+    --shadow-large: 0 20px 50px -10px rgba(60, 90, 139, 0.15);
+    --shadow-glow: 0 0 40px rgba(90, 130, 200, 0.2);
+
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 210 50% 10%;
+    --sidebar-primary: 210 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 30% 95%;
+    --sidebar-accent-foreground: 210 50% 10%;
+    --sidebar-border: 210 25% 85%;
+    --sidebar-ring: 210 70% 50%;
+  }
+
+  .dark {
+    --background: 210 50% 10%;
+    --foreground: 210 40% 92%;
+
+    --card: 210 50% 14%;
+    --card-foreground: 210 40% 92%;
+
+    --popover: 210 50% 10%;
+    --popover-foreground: 210 40% 92%;
+
+    --primary: 210 65% 55%;
+    --primary-foreground: 210 50% 10%;
+
+    --secondary: 210 40% 18%;
+    --secondary-foreground: 210 40% 92%;
+
+    --muted: 210 40% 20%;
+    --muted-foreground: 210 30% 60%;
+
+    --accent: 220 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 40% 22%;
+    --input: 210 40% 22%;
+    --ring: 210 65% 55%;
+
+    --sidebar-background: 210 50% 10%;
+    --sidebar-foreground: 210 40% 92%;
+    --sidebar-primary: 210 65% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 45% 15%;
+    --sidebar-accent-foreground: 210 40% 92%;
+    --sidebar-border: 210 45% 15%;
+    --sidebar-ring: 210 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .heading-display {
+    @apply font-heading text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight;
+  }
+
+  .heading-section {
+    @apply font-heading text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  .heading-card {
+    @apply font-heading text-xl md:text-2xl font-medium;
+  }
+
+  .text-body-large {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 px-8 py-4 rounded-md font-medium transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 rounded-md font-medium transition-all duration-300;
+  }
+
+  .btn-hero {
+    @apply bg-cream text-warm-brown hover:bg-primary hover:text-cream px-8 py-4 rounded-md font-semibold transition-all duration-700 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .btn-accent {
+    @apply bg-mediterranean text-white hover:bg-mediterranean-dark px-8 py-4 rounded-md font-medium transition-all duration-300 hover:shadow-lg;
+  }
+
+  .card-warm {
+    @apply bg-card rounded-xl shadow-soft hover:shadow-medium transition-all duration-300;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .image-hover {
+    @apply overflow-hidden rounded-xl;
+  }
+
+  .image-hover img {
+    @apply transition-transform duration-500 hover:scale-110;
+  }
+
+  .glass-warm {
+    @apply bg-cream/80 backdrop-blur-md;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.7);
+}
