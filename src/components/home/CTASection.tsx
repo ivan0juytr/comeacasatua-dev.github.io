@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import bariView from '@/assets/bari-view.jpg';
+import bariView from '@/assets/cameraMarrone.jpeg';
 
 export default function CTASection() {
   const { t } = useLanguage();

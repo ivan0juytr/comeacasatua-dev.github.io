@@ -90,15 +90,15 @@ export default function Contact() {
       <Navbar />
       
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-secondary">
+      <section className="pt-32 pb-16 bg-primary">
         <div className="container-custom text-center">
-          <span className="text-primary font-medium uppercase tracking-wider text-sm">
+          <span className="text-white font-medium uppercase tracking-wider text-sm">
             {language === 'it' ? 'Prenota il tuo soggiorno' : 'Book your stay'}
           </span>
-          <h1 className="heading-display text-foreground mt-3">
+          <h1 className="heading-display text-white mt-3">
             {t('contact.title')}
           </h1>
-          <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">
+          <p className="text-white mt-4 text-lg max-w-2xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </div>

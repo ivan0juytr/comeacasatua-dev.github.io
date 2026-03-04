@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import breakfastImage from '@/assets/breakfast.jpg';
+import breakfastImage from '@/assets/colazione.jpg';
 
 export default function IntroSection() {
   const { t } = useLanguage();

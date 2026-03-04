@@ -113,7 +113,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.breakfast.q': 'La colazione è inclusa?',
     'faq.breakfast.a': 'Sì, la colazione è sempre inclusa nel prezzo. Serviamo una ricca colazione italiana con prodotti locali freschi ogni mattina.',
     'faq.parking.q': 'C\'è un parcheggio disponibile?',
-    'faq.parking.a': 'Abbiamo una convenzione con un parcheggio custodito a 100 metri dalla struttura. Il costo è di €15 al giorno.',
+    'faq.parking.a': 'Abbiamo un nostro parcheggio sicuro e privato.',
     'faq.pets.q': 'Sono ammessi animali domestici?',
     'faq.pets.a': 'Sì, gli animali di piccola taglia sono i benvenuti con un supplemento di €10 a notte. Vi preghiamo di comunicarcelo al momento della prenotazione.',
     'faq.cancel.q': 'Qual è la politica di cancellazione?',
@@ -269,11 +269,10 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.breakfast.q': 'Is breakfast included?',
     'faq.breakfast.a': 'Yes, breakfast is always included in the price. We serve a rich Italian breakfast with fresh local products every morning.',
     'faq.parking.q': 'Is there parking available?',
-    'faq.parking.a': 'We have an agreement with a guarded parking lot 100 meters from the property. The cost is €15 per day.',
+    'faq.parking.a': 'We have our private and safe parking lot.',
     'faq.pets.q': 'Are pets allowed?',
     'faq.pets.a': 'Yes, small pets are welcome with a supplement of €10 per night. Please let us know when booking.',
-    'faq.cancel.q': 'What is the cancellation policy?',
-    'faq.cancel.a': 'Free cancellation up to 48 hours before arrival. For late cancellations, the first night will be charged.',
+
     
     // Contact
     'contact.title': 'Contact Us',

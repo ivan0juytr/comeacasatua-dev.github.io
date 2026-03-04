@@ -5,7 +5,7 @@ import {
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/contexts/LanguageContext';
-import breakfastImage from '@/assets/breakfast.jpg';
+import breakfastImage from '@/assets/colazione.jpg';
 
 const services = [
   { 
@@ -41,15 +41,15 @@ export default function Services() {
       <Navbar />
       
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-secondary">
+      <section className="pt-32 pb-16 bg-primary">
         <div className="container-custom text-center">
-          <span className="text-primary font-medium uppercase tracking-wider text-sm">
+          <span className="text-white font-medium uppercase tracking-wider text-sm">
             Amenities
           </span>
-          <h1 className="heading-display text-foreground mt-3">
+          <h1 className="heading-display text-white mt-3">
             {t('services.title')}
           </h1>
-          <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">
+          <p className="text-white mt-4 text-lg max-w-2xl mx-auto">
             {t('services.subtitle')}
           </p>
         </div>

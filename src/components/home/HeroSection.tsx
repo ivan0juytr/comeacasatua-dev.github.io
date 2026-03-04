@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-terrace.jpg';
+import heroImage from '@/assets/bariCitta.jpeg';
 
 export default function HeroSection() {
   const { t } = useLanguage();
