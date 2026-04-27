@@ -35,14 +35,7 @@ export default function CTASection() {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-            <Link to="/camere">
-              <Button
-                size="lg"
-                className="btn-hero text-lg px-10 py-6"
-              >
-                {t('hero.cta')}
-              </Button>
-            </Link>
+            
           </div>
         </div>
       </div>

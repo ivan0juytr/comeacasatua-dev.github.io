@@ -1,0 +1,13 @@
+ services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token eyJhIjoiY2YyNzA0ZjY2ZTQ2MjMwOWQ3Zjc4MDEyYmRmZjI0Y2YiLCJ0IjoiZGNhMmI3MTQtNjA5My00YTY4LWIwNDMtYTMxZDBjYzFmZTUwIiwicyI6Ik5HTTJZelZsTW1VdFkyVTRZeTAwTkdFeExUbGlObVl0WXpKbFpHWTVPVEk1WmpZeSJ9
+    depends_on:
+      - web

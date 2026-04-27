@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     hmr: {
       overlay: false,
     },
-      base: '/comeacasatua-dev.github.io/',  
+      base: '/comeacasatua/',  
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {

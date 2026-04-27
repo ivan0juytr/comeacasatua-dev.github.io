@@ -2,7 +2,7 @@ import { MapPin, Train, Plane, Waves, Church, Castle, Theater } from 'lucide-rea
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/contexts/LanguageContext';
-import bariView from '@/assets/bari-view.jpg';
+import bariView from '@/assets/bari-lungomare-all-alba.jpg';
 
 const distances = [
   { icon: Church, labelKey: 'location.oldtown', distKey: 'location.oldtown.dist' },
@@ -125,7 +125,7 @@ export default function Location() {
           <img
             src={bariView}
             alt="Bari panorama"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center brightness-75 "
           />
           <div className="absolute inset-0 bg-warm-brown/60" />
         </div>

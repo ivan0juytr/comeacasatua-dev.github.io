@@ -309,7 +309,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -322,7 +322,7 @@ export default function Contact() {
             <p className="text-muted-foreground mt-4">
               {t('faq.subtitle')}
             </p>
-          </div>
+          </div> 
 
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
@@ -344,7 +344,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
+*/}
       <Footer />
     </div>
   );

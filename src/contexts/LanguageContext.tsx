@@ -20,7 +20,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.welcome': 'Benvenuti a',
-    'hero.name': 'Comeacasatua',
+    'hero.name': 'Comeacasatua B&B',
     'hero.subtitle': 'Il tuo rifugio accogliente a Bari',
     'hero.cta': 'Scopri le Camere',
     'hero.book': 'Prenota Ora',

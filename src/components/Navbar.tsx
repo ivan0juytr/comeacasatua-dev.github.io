@@ -142,7 +142,7 @@ export default function Navbar() {
       </div>
 
         <div style= {{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999, backgroundColor: 'rgba(255, 0, 0, 0.9)', padding: '10px', marginTop: '10vh' }}>
-          <h1 className="text-center text-black-600 font-bold">ATTENZIONE VERSIONE SOLO DI TEST!!</h1>
+          <h1 className="text-center text-black-600 font-bold">VERSIONE DI TEST!!</h1>
           <h2 className='text-center text-black-600 font-bold'>Informazioni provvisorie</h2>
         </div>
 
